@@ -150,7 +150,7 @@ void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t length
 
 void setup() {
   Serial.begin(115200);
-  WiFi.begin("TeutoNET_Deisi", "4JZX2FQQYI");
+  WiFi.begin("your internet name", "your internet password");
   uint32_t notConnectedCounter = 0;
   Serial.println("Wifi connecting...");
   while (WiFi.status() != WL_CONNECTED) {
